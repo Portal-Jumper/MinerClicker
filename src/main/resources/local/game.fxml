@@ -25,22 +25,22 @@
             <Image url="@../woodenDivide.jpg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="422.0" layoutY="37.0" prefHeight="30.0" prefWidth="400.0" text="Mike's Mining Facility" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="422.0" layoutY="15.0" prefHeight="30.0" prefWidth="400.0" text="Mike's Mining Facility" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Bodoni MT" size="30.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="424.0" layoutY="77.0" prefHeight="30.0" prefWidth="407.0" text="Gems: 500" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="424.0" layoutY="60.0" prefHeight="30.0" prefWidth="407.0" text="Gems: 500" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Bodoni MT" size="30.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="424.0" layoutY="115.0" prefHeight="30.0" prefWidth="400.0" text="Gems per second: 5,23" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" layoutX="424.0" layoutY="100.0" prefHeight="30.0" prefWidth="400.0" text="Gems per second: 5,23" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="Bodoni MT" size="30.0" />
          </font>
       </Label>
-      <Pane layoutX="424.0" layoutY="35.0" opacity="0.37" prefHeight="125.0" prefWidth="400.0" style="-fx-background-color: black;" />
+      <Pane layoutX="424.0" layoutY="15.0" opacity="0.37" prefHeight="125.0" prefWidth="400.0" style="-fx-background-color: black;" />
       <ImageView fx:id="gemImage" fitHeight="250.0" fitWidth="250.0" layoutX="487.0" layoutY="275.0" onMouseClicked="#pressGem">
          <image>
             <Image url="@../Diamond.png" />
@@ -52,7 +52,123 @@
             <Font name="Bodoni MT" size="30.0" />
          </font>
       </Label>
-      <Pane layoutX="834.0" layoutY="35.0" opacity="0.37" prefHeight="125.0" prefWidth="365.0" style="-fx-background-color: black;" />
-      <Pane layoutX="-7.0" layoutY="36.0" opacity="0.37" prefHeight="125.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <Label alignment="CENTER" layoutX="835.0" layoutY="60.0" prefHeight="38.0" prefWidth="365.0" text="Upgrades" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="65.0" prefHeight="30.0" prefWidth="400.0" text="Workers" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="153.0" prefHeight="30.0" prefWidth="400.0" text="UnExperienced" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="35.0" layoutY="262.0" prefHeight="30.0" prefWidth="400.0" text="Miner" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="373.0" prefHeight="30.0" prefWidth="400.0" text="Engineer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="39.0" layoutY="479.0" prefHeight="30.0" prefWidth="400.0" text="Analyst" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="587.0" prefHeight="30.0" prefWidth="400.0" text="Robot" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="343.0" layoutY="151.0" prefHeight="103.0" prefWidth="61.0" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="70.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="343.0" layoutY="260.0" prefHeight="103.0" prefWidth="61.0" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="70.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="343.0" layoutY="366.0" prefHeight="103.0" prefWidth="61.0" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="70.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="476.0" prefHeight="103.0" prefWidth="61.0" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="70.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="342.0" layoutY="586.0" prefHeight="103.0" prefWidth="61.0" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="70.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="110.0" layoutY="182.0" prefHeight="38.0" prefWidth="242.0" text="Price: 200" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="36.0" layoutY="210.0" prefHeight="30.0" prefWidth="400.0" text="GPS: 1,2" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="292.0" prefHeight="38.0" prefWidth="245.0" text="Price: 1000" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="103.0" layoutY="318.0" prefHeight="38.0" prefWidth="245.0" text="GPS: 3,8" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="834.0" layoutY="15.0" opacity="0.37" prefHeight="125.0" prefWidth="365.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="15.0" opacity="0.37" prefHeight="125.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="150.0" opacity="0.37" prefHeight="100.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="260.0" opacity="0.37" prefHeight="100.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="370.0" opacity="0.37" prefHeight="100.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="480.0" opacity="0.37" prefHeight="100.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="590.0" opacity="0.37" prefHeight="100.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="700.0" opacity="0.37" prefHeight="100.0" prefWidth="420.0" style="-fx-background-color: black;" />
+      <ImageView fitHeight="82.0" fitWidth="114.0" layoutX="5.0" layoutY="159.0">
+         <image>
+            <Image url="@../UnWorker.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="97.0" layoutX="10.0" layoutY="267.0">
+         <image>
+            <Image url="@../Worker.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="112.0" layoutX="5.0" layoutY="377.0">
+         <image>
+            <Image url="@../Engineer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="149.0" layoutX="3.0" layoutY="495.0">
+         <image>
+            <Image url="@../Analyst.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="112.0" layoutX="6.0" layoutY="602.0">
+         <image>
+            <Image url="@../Robot.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="75.0" fitWidth="125.0" layoutY="712.0">
+         <image>
+            <Image url="@../Restart.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
