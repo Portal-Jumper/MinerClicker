@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="local.GameController">
+<AnchorPane fx:id="anchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="local.GameController">
    <children>
-      <Label layoutX="272.0" layoutY="183.0" text="Label" />
+      <ImageView fx:id="imageView" fitHeight="800.0" fitWidth="1200.0">
+         <image>
+            <Image url="@../GameBackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="800.0" fitWidth="12.0" layoutX="874.0">
+         <image>
+            <Image url="@../woodenDivide.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="800.0" fitWidth="12.0" layoutX="365.0">
+         <image>
+            <Image url="@../woodenDivide.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

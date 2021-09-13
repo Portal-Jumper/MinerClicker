@@ -13,17 +13,15 @@ public class LoginController {
     @FXML
     PasswordField passwordField;
 
+
     @FXML
     void logIn() throws IOException {
         App.setRoot("game");
+        App.resize();
     }
 
     @FXML
     void click() throws IOException {
         App.setRoot("register");
-    }
-
-    boolean logInVerify() {
-
     }
 }
