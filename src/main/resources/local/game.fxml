@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="anchorPane" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="local.GameController">
    <children>
@@ -11,15 +15,44 @@
             <Image url="@../GameBackground.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="800.0" fitWidth="12.0" layoutX="874.0">
+      <ImageView fitHeight="800.0" fitWidth="12.0" layoutX="824.0">
          <image>
             <Image url="@../woodenDivide.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="800.0" fitWidth="12.0" layoutX="365.0">
+      <ImageView fitHeight="800.0" fitWidth="12.0" layoutX="412.0">
          <image>
             <Image url="@../woodenDivide.jpg" />
          </image>
       </ImageView>
+      <Label alignment="CENTER" layoutX="422.0" layoutY="37.0" prefHeight="30.0" prefWidth="400.0" text="Mike's Mining Facility" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="424.0" layoutY="77.0" prefHeight="30.0" prefWidth="407.0" text="Gems: 500" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="424.0" layoutY="115.0" prefHeight="30.0" prefWidth="400.0" text="Gems per second: 5,23" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="424.0" layoutY="35.0" opacity="0.37" prefHeight="125.0" prefWidth="400.0" style="-fx-background-color: black;" />
+      <ImageView fx:id="gemImage" fitHeight="250.0" fitWidth="250.0" layoutX="487.0" layoutY="275.0" onMouseClicked="#pressGem">
+         <image>
+            <Image url="@../Diamond.png" />
+         </image>
+      </ImageView>
+      <ProgressBar layoutX="422.0" layoutY="620.0" prefHeight="50.0" prefWidth="400.0" progress="1.0" style="-fx-accent: red; -fx-text-box-border: 0,0,0,0;" />
+      <Label alignment="CENTER" layoutX="429.0" layoutY="626.0" prefHeight="30.0" prefWidth="400.0" text="5 / 20" textAlignment="CENTER" textFill="#090909">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <Pane layoutX="834.0" layoutY="35.0" opacity="0.37" prefHeight="125.0" prefWidth="365.0" style="-fx-background-color: black;" />
+      <Pane layoutX="-7.0" layoutY="36.0" opacity="0.37" prefHeight="125.0" prefWidth="420.0" style="-fx-background-color: black;" />
    </children>
 </AnchorPane>

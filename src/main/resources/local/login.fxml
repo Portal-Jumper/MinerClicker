@@ -11,37 +11,42 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #69696b;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="local.LoginController">
    <children>
+      <ImageView fitHeight="401.0" fitWidth="602.0">
+         <image>
+            <Image url="@../MineBackgroud.jpg" />
+         </image>
+      </ImageView>
       <Button layoutX="274.0" layoutY="246.0" mnemonicParsing="false" onMouseClicked="#logIn" style="-fx-background-color: #090a0c; -fx-background-color: linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%); -fx-background-color: linear-gradient(#20262b, #191d22); -fx-background-color: radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0)); -fx-background-radius: 5,4,3,5; -fx-background-inset: 0,1,2,0; -fx-text-fill: white; -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 ); -fx-font-family: Arial; -fx-text-fill: linear-gradient(white, #d0d0d0); -fx-font-size: 12px; -fx-padding: 10 20 10 20;" text="Log in" />
-      <Label layoutX="102.0" layoutY="137.0" text="Username: ">
+      <Label layoutX="102.0" layoutY="137.0" text="Username: " textFill="#868686">
          <font>
             <Font name="Lato Regular" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="114.0" layoutY="185.0" text="Password:">
+      <Label layoutX="104.0" layoutY="185.0" text="Password:" textFill="#868686">
          <font>
             <Font name="Lato Regular" size="24.0" />
          </font>
       </Label>
       <TextField fx:id="usernameField" layoutX="236.0" layoutY="140.0" />
-      <Label layoutX="98.0" layoutY="294.0" text="Don't have an account?">
+      <Label layoutX="98.0" layoutY="306.0" text="Don't have an account?" textFill="#868686">
          <font>
             <Font name="Lato Regular" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="358.0" layoutY="294.0" onMouseClicked="#click" text="Click here!" textFill="#4dbcba">
+      <Label layoutX="358.0" layoutY="308.0" onMouseClicked="#click" text="Click here!" textFill="#4dbcba">
          <font>
             <Font name="Lato Regular" size="24.0" />
          </font>
       </Label>
       <PasswordField fx:id="passwordField" layoutX="236.0" layoutY="188.0" />
-      <Label layoutX="251.0" layoutY="33.0" text="MINING">
+      <Label alignment="CENTER" layoutX="251.0" layoutY="33.0" prefWidth="166.0" text="MINING" textFill="#a48787">
          <font>
-            <Font name="Goudy Stout" size="24.0" />
+            <Font name="Book Antiqua" size="41.0" />
          </font>
       </Label>
-      <Label layoutX="247.0" layoutY="80.0" text="CLICKER">
+      <Label layoutX="239.0" layoutY="76.0" text="CLICKER" textFill="#a48787">
          <font>
-            <Font name="Goudy Stout" size="24.0" />
+            <Font name="Book Antiqua" size="43.0" />
          </font>
       </Label>
       <ImageView fitHeight="94.0" fitWidth="141.0" layoutX="128.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
