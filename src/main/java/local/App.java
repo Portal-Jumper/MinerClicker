@@ -37,7 +37,7 @@ public class App extends Application {
     }
 
     static void resize() {
-        stage.setHeight(800);
+        stage.setHeight(830);
         stage.setWidth(1200);
     }
 
