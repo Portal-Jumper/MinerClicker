@@ -86,8 +86,7 @@ public class GameController {
 
     @FXML
     void pressGem() {
-        GameInfo.gems++;
-//        GameInfo.gems += 5000;
+        GameInfo.gems += GameInfo.gemsPerClick;
         updateGems();
         GameInfo.health--;
         hpLabel.setText(GameInfo.health + " / 20");
@@ -179,6 +178,7 @@ public class GameController {
             GameInfo.robotPrice = 50000;
             GameInfo.health = 20;
             GameInfo.gems = 0;
+            GameInfo.gemsPerClick = 1;
             unExperiencedLabel.setText(String.valueOf(GameInfo.unExperienced));
             unExperiencedPriceLabel.setText("Price: " + GameInfo.unExperiencedPrice);
             minerLabel.setText(String.valueOf(GameInfo.miner));

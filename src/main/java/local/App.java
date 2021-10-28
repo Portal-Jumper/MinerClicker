@@ -1,6 +1,7 @@
 package local;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -15,7 +16,7 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
-    private static Stage stage;
+    public static Stage stage;
 
     @Override
     public void start(Stage stage) throws IOException {
@@ -25,6 +26,10 @@ public class App extends Application {
         stage.setResizable(false);
         stage.initStyle(StageStyle.UTILITY);
         stage.show();
+        stage.setOnCloseRequest(e -> {
+            Platform.exit();
+            System.exit(0);
+        });
     }
 
     static void setRoot(String fxml) throws IOException {
